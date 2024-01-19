@@ -1,13 +1,16 @@
+console.log('Vue Ok', Vue);
+
 const { createApp } = Vue
 
-const myApp = createApp({
+createApp({
     data() {
         return {
-            textStyle: ['text-center', 'p-3'],
-            message: 'Hello Vue!'
+            textStyle: ['p-5'],
+            message: 'Hello Vue!',
+            imageStyle: ['rounded mx-auto d-block', 'img-fluid'],
+            image: 'img/logo_vue.jpeg',
         }
     }
 })
 
-myApp.mount('#root');
-
+    .mount('#root')
