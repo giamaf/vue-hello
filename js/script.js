@@ -2,7 +2,7 @@ console.log('Vue Ok', Vue);
 
 const { createApp } = Vue
 
-createApp({
+const myApp = createApp({
     data() {
         return {
             textStyle: ['p-5'],
@@ -13,4 +13,4 @@ createApp({
     }
 })
 
-    .mount('#root')
+myApp.mount('#root');
